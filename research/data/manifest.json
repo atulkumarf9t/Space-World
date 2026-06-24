@@ -1,0 +1,58 @@
+{
+  "splits": {
+    "train": {
+      "file": "train.jsonl",
+      "scenarios": 500,
+      "rows": 18981,
+      "seeds": "1000..1499",
+      "sha256": "6a1ae4360665b183559e0771d156c16848d89ccd39d42517a10d727320856692",
+      "burn_fraction": 0.052,
+      "mean_burn_dv": 2.355,
+      "max_burn_dv": 9.653,
+      "mean_active_pc": 0.0
+    },
+    "val": {
+      "file": "val.jsonl",
+      "scenarios": 100,
+      "rows": 3819,
+      "seeds": "100000..100099",
+      "sha256": "92202e6c1611d2e8a2da7b1b1126c614d2534a5b7fe9a505fc3e2e0b7314a3bb",
+      "burn_fraction": 0.042,
+      "mean_burn_dv": 2.49,
+      "max_burn_dv": 7.716,
+      "mean_active_pc": 0.0
+    },
+    "test": {
+      "file": "test.jsonl",
+      "scenarios": 100,
+      "rows": 3858,
+      "seeds": "900000..900099",
+      "sha256": "046b67855ba051ade79fab6be3feba3737002d3e88307b0926beaa9c9ef4e51b",
+      "burn_fraction": 0.042,
+      "mean_burn_dv": 2.175,
+      "max_burn_dv": 7.696,
+      "mean_active_pc": 0.0
+    }
+  },
+  "seed_base": {
+    "train": 1000,
+    "val": 100000,
+    "test": 900000
+  },
+  "obs_dim": 7,
+  "schema": [
+    "split",
+    "scenario",
+    "seed",
+    "step",
+    "obs[7]",
+    "action_type",
+    "action_dv",
+    "worst_target",
+    "worst_pc",
+    "worst_miss",
+    "worst_tca",
+    "needs_burn",
+    "par"
+  ]
+}

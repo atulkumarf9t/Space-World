@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"]
+  },
+  "//": "Type-checks the deterministic math/engine core (the part where correctness matters most).",
+  "include": [
+    "src/physics.js",
+    "src/ep_model.js",
+    "src/simulation.js",
+    "src/policies.js",
+    "src/scenarios.js",
+    "src/dynamics.js",
+    "src/rng.js",
+    "src/campaign.js"
+  ]
+}

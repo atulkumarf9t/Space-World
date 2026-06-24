@@ -1,0 +1,5 @@
+# Core engine + env run on pure stdlib. These enable the full toolchain:
+numpy>=1.21        # vectorized Pc (pure-Python fallback exists), fast obs
+torch>=2.0         # BC / PPO training (train.py, a3_benchmark.py)
+gymnasium>=0.29    # gym.make("Drift-v0") registration (optional)
+# JS-side extras (npm, not pip): satellite.js for TLE ingestion, three / @reactor-team/js-sdk for the app

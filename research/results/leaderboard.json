@@ -1,0 +1,46 @@
+{
+  "split": "test",
+  "n": 120,
+  "results": {
+    "optimal": {
+      "n": 120,
+      "success_pct": 100.0,
+      "mean_regret": 1.061,
+      "collisions": 0,
+      "unsafe": 0,
+      "mean_dv": 0.957,
+      "violations": 0,
+      "over_budget": 0
+    },
+    "heuristic": {
+      "n": 120,
+      "success_pct": 100.0,
+      "mean_regret": 2.268,
+      "collisions": 0,
+      "unsafe": 0,
+      "mean_dv": 1.073,
+      "violations": 0,
+      "over_budget": 0
+    },
+    "random": {
+      "n": 120,
+      "success_pct": 90.0,
+      "mean_regret": 2.88,
+      "collisions": 0,
+      "unsafe": 12,
+      "mean_dv": 1.167,
+      "violations": 0,
+      "over_budget": 0
+    },
+    "null": {
+      "n": 120,
+      "success_pct": 69.2,
+      "mean_regret": null,
+      "collisions": 0,
+      "unsafe": 37,
+      "mean_dv": 0.0,
+      "violations": 0,
+      "over_budget": 0
+    }
+  }
+}

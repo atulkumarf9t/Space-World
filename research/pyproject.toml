@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drift-env"
+version = "0.1.0"
+description = "DRIFT — a verifiable, oracle-backed, shielded spacecraft conjunction-avoidance environment for agent / LLM / RL research."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "DRIFT" }]
+keywords = ["reinforcement-learning", "safe-rl", "llm-agents", "space", "conjunction", "gymnasium", "benchmark"]
+dependencies = []   # core engine is pure-stdlib
+
+[project.optional-dependencies]
+fast = ["numpy>=1.21"]         # vectorized Pc (pure-Python fallback exists)
+rl = ["torch>=2.0", "numpy>=1.21"]
+gym = ["gymnasium>=0.29", "numpy>=1.21"]
+tle = ["satellite.js"]          # (JS only; Python TLE ingestion is in the JS engine)
+all = ["numpy>=1.21", "torch>=2.0", "gymnasium>=0.29"]
+
+[tool.setuptools]
+packages = ["drift_env"]

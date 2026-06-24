@@ -1,0 +1,40 @@
+{
+  "name": "drift-3d",
+  "version": "4.0.0",
+  "description": "DRIFT 3D — third-person Newtonian space sim: protect ally, avoid asteroid, least delta-v. Three.js scene + Reactor generative backdrop + Gemini agent.",
+  "type": "module",
+  "scripts": {
+    "build": "node server/build_vendor.mjs",
+    "start": "node server/proxy.js",
+    "dev": "node server/proxy.js",
+    "test": "node test/physics.test.mjs && node test/dynamics.test.mjs && node test/multithreat.test.mjs && node test/campaign.test.mjs && node test/tle.test.mjs",
+    "eval": "node eval/run.mjs",
+    "typecheck": "tsc --noEmit",
+    "vite": "vite",
+    "vite:build": "vite build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "agent",
+    "world-model",
+    "reactor",
+    "electric-propulsion",
+    "conjunction",
+    "collision-avoidance"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@reactor-team/js-sdk": "^2.12.0",
+    "pdfkit": "^0.19.1",
+    "satellite.js": "^7.0.1",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "hls.js": "^1.6.16",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16"
+  }
+}
